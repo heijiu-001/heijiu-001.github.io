@@ -3,17 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="殷俊豪 — 鸿蒙开发工程师，专注于物联网与端云一体化开发" />
-    <meta property="og:title" content="殷俊豪 — Developer Portfolio" />
-    <meta property="og:description" content="鸿蒙开发工程师 · 物联网 · 端云一体化" />
+    <meta
+      name="description"
+      content="殷俊豪的个人技术名片：鸿蒙应用、物联网与端云一体化开发。"
+    />
+    <meta property="og:title" content="殷俊豪 — 技术名片" />
+    <meta property="og:description" content="鸿蒙开发 · 物联网 · 端云一体化" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#05070d" />
-    <title>殷俊豪 — Developer Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <script type="module" crossorigin src="/assets/index-DHyRzVlO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CY2C3inG.css">
+    <title>殷俊豪 — 技术名片</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <div id="root"></div>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="#top" aria-label="返回页面顶部">Yin Junhao</a>
+        <div class="nav-links">
+          <a href="#works">作品</a>
+          <a href="#software">软件</a>
+          <a href="#about">关于</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <p class="hero-greeting">你好，我是</p>
+        <h1 id="hero-title">殷俊豪</h1>
+        <p class="hero-lead">专注于鸿蒙生态与物联网开发，追求简洁、高性能与可靠的端云协同体验。</p>
+        <p class="now-building">正在做：鸿蒙 + 星闪智能跑马灯远程控制系统</p>
+        <div class="hero-actions" id="profile-links"></div>
+      </section>
+
+      <section class="section container" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <p>Project evidence</p>
+          <h2 id="works-title">精选作品</h2>
+          <span>从设备端到云平台，再到鸿蒙应用的完整实践。</span>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="section release-section" id="software" aria-labelledby="software-title">
+        <div class="container">
+          <div class="section-heading">
+            <p>Software releases</p>
+            <h2 id="software-title">软件发布</h2>
+            <span>安装包将通过 GitHub Releases 发布；每个版本都会标注平台与校验信息。</span>
+          </div>
+          <div class="software-list" id="software-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section container" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p>About</p>
+          <h2 id="about-title">关于我</h2>
+        </div>
+        <div class="about-grid" id="about-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 殷俊豪</span>
+        <span>以简洁为设计原则</span>
+        <a href="https://github.com/heijiu-001" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
   </body>
 </html>
